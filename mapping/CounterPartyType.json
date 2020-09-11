@@ -1,0 +1,661 @@
+{
+   "JSONCOLUMNS":{
+      "CONDITION":[
+         "",
+         "",
+         "",
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.cparty_type  = 'RETAIL'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.cparty_type  = 'NON_FIN_CORP' AND $Aggregation.sme_ind  = 'Y'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type = 'NON_FIN_CORP' AND $Aggregation.sme_ind  != 'Y'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'TRUST_AND_DOM_COMP_PRIVATE'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.cparty_type  = 'SOV'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.cparty_type  = 'CB'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'RGVT'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'LOAU'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.cparty_type  = 'PSE'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'BANK'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'MDB_LISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'NON_BANK_FIN_INST'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.cparty_type  = 'MDB_UNLISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.cparty_type  = 'OTHER_LEGAL_ENTITIES'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         "",
+         "",
+         "",
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_cparty_type  = 'RETAIL'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_cparty_type  = 'NON_FIN_CORP' AND $Aggregation.ult_c_sme_ind  = 'Y'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'NON_FIN_CORP' AND $Aggregation.ult_c_sme_ind  != 'Y'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'TRUST_AND_DOM_COMP_PRIVATE'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_cparty_type  = 'SOV'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_cparty_type  = 'CB'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'RGVT'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'LOAU'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_cparty_type  = 'PSE'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'BANK'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'MDB_LISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'NON_BANK_FIN_INST'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'MDB_UNLISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         "",
+         "",
+         "",
+         "",
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_issuer_type  = 'RETAIL'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_issuer_type  = 'NON_FIN_CORP' AND $Aggregation.ult_i_sme_ind = 'Y'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'NON_FIN_CORP' AND $Aggregation.ult_i_sme_ind  != 'Y'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'TRUST_AND_DOM_COMP_PRIVATE'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_issuer_type  = 'SOV'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.ult_issuer_type  = 'CB'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'RGVT'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'LOAU'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.issuer_type  = 'PSE'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'BANK'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'MDB_LISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_issuer_type  = 'NON_BANK_FIN_INST'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.issuer_type  = 'MDB_UNLISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         "",
+         "",
+         "",
+         "",
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.issuer_type  = 'RETAIL'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.issuer_type  = 'NON_FIN_CORP' AND $Aggregation.i_sme_ind  = 'Y'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.issuer_type  = 'NON_FIN_CORP' AND $Aggregation.i_sme_ind  != 'Y'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.issuer_type  = 'TRUST_AND_DOM_COMP_PRIVATE'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.issuer_type  = 'SOV'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.issuer_type  = 'CB'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.issuer_type  = 'RGVT'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.issuer_type  = 'LOAU'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.issuer_type  = 'PSE'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'BANK'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'MDB_LISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'NON_BANK_FIN_INST'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.ult_cparty_type  = 'MDB_UNLISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         "",
+         "",
+         {
+            "CONDITION":{
+               "COLUMN":{
+                  "ALIAS":"guarantor",
+                  "COLNAME":"cparty_id"
+               },
+               "OPERATION":"IS NOT",
+               "VALUE":"NULL",
+               "_type":"EXPRESSION_SINGULAR"
+            }
+         },
+         "",
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.guarantor_type  = 'RETAIL'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.guarantor_type  = 'NON_FIN_CORP' AND $Aggregation.g_sme_ind  = 'Y'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'NON_FIN_CORP'  AND $Aggregation.g_sme_ind  != 'Y'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'TRUST_AND_DOM_COMP_PRIVATE'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.guarantor_type  = 'SOV'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.guarantor_type  = 'CB'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'RGVT'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'LOAU'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":{
+               "CONDITION":{
+                  "OPERATION":"",
+                  "VALUE":"$Aggregation.guarantor_type  = 'PSE'",
+                  "_type":"EXPRESSION_FREEHAND"
+               }
+            }
+         },
+         "",
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'BANK'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.issuer_type  = 'MDB_LISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         {
+            "CONDITION":[
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'NON_BANK_FIN_INST'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               },
+               {
+                  "CONDITION":{
+                     "OPERATION":"",
+                     "VALUE":"$Aggregation.guarantor_type  = 'MDB_UNLISTED'",
+                     "_type":"EXPRESSION_FREEHAND"
+                  }
+               }
+            ],
+            "COPULA":"OR"
+         },
+         "",
+         ""
+      ]
+   }
+}

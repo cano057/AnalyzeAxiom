@@ -1,0 +1,152 @@
+{
+  "JSONCOLUMNS": {
+    "CONDITION": [
+      "",
+      {
+        "CONDITION": [
+          {
+            "COLUMN": {
+              "ALIAS": "PROD_CLF",
+              "COLNAME": "balance_sheet_item"
+            },
+            "OPERATION": "=",
+            "VALUE": "LIA",
+            "_type": "SINGULAR_CONCRETE"
+          },
+          {
+            "COLUMN": {
+              "ALIAS": "PROD_CLF",
+              "COLNAME": "product_type_code"
+            },
+            "OPERATION": "NOT IN",
+            "VALUE": [
+              "DER",
+              "SH_POS",
+              "nFIN_LIA",
+              "CCY_SWAP",
+              "CSW",
+              "RPO_INF",
+              "RRP_LIA"
+            ],
+            "_type": "LIST"
+          }
+        ],
+        "COPULA": "AND"
+      },
+      {
+        "CONDITION": {
+          "CONDITION": {
+            "OPERATION": "",
+            "VALUE": "@isNull($Aggregation.ovrd_intra_comp_grp_code, $Aggregation.intra_comp_grp_code)='Y'",
+            "_type": "EXPRESSION_FREEHAND"
+          }
+        }
+      },
+      {
+        "CONDITION": {
+          "COLUMN": {
+            "ALIAS": "PROD_CLF",
+            "COLNAME": "product_type_code"
+          },
+          "OPERATION": "=",
+          "VALUE": "RPO",
+          "_type": "SINGULAR_CONCRETE"
+        }
+      },
+      {
+        "CONDITION": {
+          "COLUMN": {
+            "ALIAS": "PROD_CLF",
+            "COLNAME": "product_type_code"
+          },
+          "OPERATION": "=",
+          "VALUE": "COV_BND",
+          "_type": "SINGULAR_CONCRETE"
+        }
+      },
+      {
+        "CONDITION": {
+          "COLUMN": {
+            "ALIAS": "PROD_CLF",
+            "COLNAME": "product_type_code"
+          },
+          "OPERATION": "=",
+          "VALUE": "ABS",
+          "_type": "SINGULAR_CONCRETE"
+        }
+      },
+      {
+        "CONDITION": [
+          {
+            "COLUMN": {
+              "ALIAS": "CPARTY_CLF",
+              "COLNAME": "counterparty_sector"
+            },
+            "OPERATION": "=",
+            "VALUE": "WHOLESALE_FIN",
+            "_type": "SINGULAR_CONCRETE"
+          },
+          {
+            "CONDITION": {
+              "OPERATION": "",
+              "VALUE": "$Aggregation.collateralised_ind  = 'Y'",
+              "_type": "EXPRESSION_FREEHAND"
+            }
+          }
+        ],
+        "COPULA": [
+          "AND",
+          "NOT"
+        ]
+      },
+      {
+        "CONDITION": [
+          {
+            "CONDITION": [
+              {
+                "CONDITION": {
+                  "OPERATION": "",
+                  "VALUE": "$Aggregation.cparty_type  = 'PERSONAL_INVESTMENT_COM'",
+                  "_type": "EXPRESSION_FREEHAND"
+                }
+              },
+              {
+                "CONDITION": {
+                  "OPERATION": "",
+                  "VALUE": "$Aggregation.cparty_type  = 'SSPE'",
+                  "_type": "EXPRESSION_FREEHAND"
+                }
+              },
+              {
+                "COLUMN": {
+                  "ALIAS": "CPARTY_CLF",
+                  "COLNAME": "counterparty_sector"
+                },
+                "OPERATION": "=",
+                "VALUE": "WHOLESALE_nFIN",
+                "_type": "SINGULAR_CONCRETE"
+              }
+            ],
+            "COPULA": [
+              "OR",
+              "OR"
+            ]
+          },
+          {
+            "CONDITION": {
+              "OPERATION": "",
+              "VALUE": "$Aggregation.collateralised_ind  = 'Y'",
+              "_type": "EXPRESSION_FREEHAND"
+            }
+          }
+        ],
+        "COPULA": [
+          "AND",
+          "NOT"
+        ]
+      },
+      "",
+      ""
+    ]
+  }
+}

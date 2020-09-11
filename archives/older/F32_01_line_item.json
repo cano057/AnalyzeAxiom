@@ -1,0 +1,175 @@
+{
+  "JSONCOLUMNS": {
+    "CONDITION": [
+      "",
+      {
+        "CONDITION": {
+          "CONDITION": [
+            {
+              "CONDITION": [
+                {
+                  "COLUMN": {
+                    "ALIAS": "Aggregation",
+                    "COLNAME": "path_eu_clf_transactionty"
+                  },
+                  "OPERATION": "=",
+                  "VALUE": "/nSTR/ASSET/",
+                  "_type": "SINGULAR_CONCRETE"
+                },
+                {
+                  "COLUMN": {
+                    "ALIAS": "Aggregation",
+                    "COLNAME": "path_eu_clf_producttype"
+                  },
+                  "OPERATION": "IN",
+                  "VALUE": [
+                    "/MAIN_CATEGORY/CB_RSV/",
+                    "/MAIN_CATEGORY/LOAN_DEM/"
+                  ],
+                  "_type": "LIST"
+                }
+              ],
+              "COPULA": "AND"
+            },
+            {
+              "CONDITION": [
+                {
+                  "COLUMN": {
+                    "ALIAS": "Aggregation",
+                    "COLNAME": "path_eu_clf_transactionty"
+                  },
+                  "OPERATION": "=",
+                  "VALUE": "/STR/LENT/RRP/",
+                  "_type": "SINGULAR_CONCRETE"
+                },
+                {
+                  "COLUMN": {
+                    "ALIAS": "Aggregation",
+                    "COLNAME": "path_eu_clf_producttype"
+                  },
+                  "OPERATION": "IN",
+                  "VALUE": "/MAIN_CATEGORY/LOAN_DEM/",
+                  "_type": "LIST"
+                }
+              ],
+              "COPULA": "AND"
+            }
+          ],
+          "COPULA": "OR"
+        }
+      },
+      {
+        "CONDITION": {
+          "CONDITION": [
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_transactionty"
+              },
+              "OPERATION": "=",
+              "VALUE": "/nSTR/ASSET/",
+              "_type": "SINGULAR_CONCRETE"
+            },
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_producttype"
+              },
+              "OPERATION": "IN",
+              "VALUE": "/MAIN_CATEGORY/EQUITY/",
+              "_type": "LIST"
+            }
+          ],
+          "COPULA": "AND"
+        }
+      },
+      {
+        "CONDITION": {
+          "CONDITION": [
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_transactionty"
+              },
+              "OPERATION": "=",
+              "VALUE": "/nSTR/ASSET/",
+              "_type": "SINGULAR_CONCRETE"
+            },
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_producttype"
+              },
+              "OPERATION": "IN",
+              "VALUE": [
+                "/MAIN_CATEGORY/ABS/",
+                "/MAIN_CATEGORY/COV_BND/",
+                "/MAIN_CATEGORY/DS/"
+              ],
+              "_type": "LIST"
+            }
+          ],
+          "COPULA": "AND"
+        }
+      },
+      {
+        "CONDITION": {
+          "CONDITION": [
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_transactionty"
+              },
+              "OPERATION": "=",
+              "VALUE": "/nSTR/ASSET/",
+              "_type": "SINGULAR_CONCRETE"
+            },
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_producttype"
+              },
+              "OPERATION": "IN",
+              "VALUE": [
+                "/MAIN_CATEGORY/ABS/",
+                "/MAIN_CATEGORY/COV_BND/",
+                "/MAIN_CATEGORY/DS/"
+              ],
+              "_type": "LIST"
+            }
+          ],
+          "COPULA": "AND"
+        }
+      },
+      {
+        "CONDITION": {
+          "CONDITION": [
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_transactionty"
+              },
+              "OPERATION": "=",
+              "VALUE": "/nSTR/ASSET/",
+              "_type": "SINGULAR_CONCRETE"
+            },
+            {
+              "COLUMN": {
+                "ALIAS": "Aggregation",
+                "COLNAME": "path_eu_clf_producttype"
+              },
+              "OPERATION": "IN",
+              "VALUE": [
+                "/MAIN_CATEGORY/CASH/",
+                "/MAIN_CATEGORY/OTH_ELG_ASSET/"
+              ],
+              "_type": "LIST"
+            }
+          ],
+          "COPULA": "AND"
+        }
+      },
+      ""
+    ]
+  }
+}

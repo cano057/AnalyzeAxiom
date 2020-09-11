@@ -1,0 +1,32 @@
+{
+   "JSONCOLUMNS":{
+      "CONDITION":[
+         "",
+         {
+            "CONDITION":{
+               "COLUMN":{
+                  "ALIAS":"PRE_NET_CLF",
+                  "COLNAME":"check_type"
+               },
+               "OPERATION":"IN",
+               "VALUE":"INT_NET",
+               "_type":"LIST"
+            }
+         },
+         "",
+         "",
+         {
+            "CONDITION":{
+               "COLUMN":{
+                  "ALIAS":"PRE_NET_CLF",
+                  "COLNAME":"check_type"
+               },
+               "OPERATION":"NOT IN",
+               "VALUE":"INT_NET",
+               "_type":"LIST"
+            }
+         },
+         ""
+      ]
+   }
+}
